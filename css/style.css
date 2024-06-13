@@ -1,0 +1,40 @@
+/*Fonts*/
+@font-face {
+    font-family: norse-bold;
+    src: url(../fonts/norse-bold-webfont.woff2),
+         url(../fonts/norse-bold-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: pacifico;
+    src: url(../fonts/pacifico-webfont.woff2),
+         url(../fonts/pacifico-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../fonts/quicksand-regular-webfont.woff2),
+         url(../fonts/quicksand-regular-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../fonts/quicksand-bold-webfont.woff2),
+         url(../fonts/quicksand-bold-webfont.woff);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../fonts/quicksand-bolditalic-webfont.woff2),
+         url(../fonts/quicksand-bolditalic-webfont.woff);
+    font-weight: bold;
+    font-style: italic;
+}
