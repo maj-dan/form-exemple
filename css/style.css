@@ -41,7 +41,9 @@
 
 :root {
     font-size: 16px;
-    --white: #fff;
+    --white: #FFF;
+    --gray: #EEE;
+    --light: #E5E7EB;
     --left-padding: 64px;
     --right-padding: max(36px, 20%);
 }
@@ -79,7 +81,7 @@ aside > img {
 aside > div {
     position: absolute;
     top: 20%;
-    height: max(20%, 6rem);
+    height: max(20%, 7rem);
     width: 100%;
     padding: 12px 0;
     background-color: #00000066;
@@ -111,6 +113,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    background-color: var(--gray);
 }
 
 main > * {
@@ -118,9 +121,55 @@ main > * {
 }
 
 main > * + * {
-    margin-top: 46px;
+    margin-top: 40px;
 }
 main > div {
     margin-top: 54px;
+    background-color: var(--white);
+    align-self: stretch;
+}
+
+form {
+    width: max(80%, 600px);
+    margin: 28px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+form > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: max(45%, 250px);
+}
+
+div > label,
+div > input {
+    width: 100%;
+}
+
+div > h2 {
+    margin-top: 28px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+}
+
+div > label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+div > input {
+    margin-top: 4px;
+    appearance: none;
+    border: 1px solid var(--light);
+    border-radius: 6px;
+    font-family: quicksand, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
 }
 
