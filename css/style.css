@@ -38,3 +38,48 @@
     font-weight: bold;
     font-style: italic;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: quicksand, sans-serif;
+}
+
+/*sidebar*/
+aside {
+    position: relative;
+    height: 100vh;
+    overflow: clip;
+    flex: 1;
+}
+
+img {
+    position: relative;
+    height: 100%;
+}
+
+aside > div,
+p {
+    position: absolute;
+}
+
+aside > div {
+    top: 20%;
+    height: 20%;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #00000066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 2;
+}
+
