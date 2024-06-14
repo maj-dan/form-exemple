@@ -39,6 +39,11 @@
     font-style: italic;
 }
 
+:root {
+    font-size: 16px;
+    --white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -56,6 +61,11 @@ aside {
     height: 100vh;
     overflow: clip;
     flex: 1;
+    color: var(--white);
+}
+
+aside a {
+    color: var(--white);
 }
 
 img {
@@ -75,8 +85,21 @@ aside > div {
     padding: 12px 0;
     background-color: #00000066;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+
+aside h1 {
+    font-family: norse-bold;
+    font-size: 6rem;
+}
+
+aside > p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 main {
