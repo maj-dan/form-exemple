@@ -42,6 +42,8 @@
 :root {
     font-size: 16px;
     --white: #fff;
+    --left-padding: 64px;
+    --right-padding: max(36px, 20%);
 }
 
 * {
@@ -74,12 +76,8 @@ aside > img {
     width: max(100vh, 34vw, 390px);
 }
 
-aside > div,
-p {
-    position: absolute;
-}
-
 aside > div {
+    position: absolute;
     top: 20%;
     height: max(20%, 6rem);
     width: 100%;
@@ -110,5 +108,19 @@ aside > div > img {
 main {
     flex: 2;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+main > * {
+    padding: 0 var(--right-padding) 0 var(--left-padding);
+}
+
+main > * + * {
+    margin-top: 46px;
+}
+main > div {
+    margin-top: 54px;
 }
 
