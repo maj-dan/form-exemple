@@ -203,6 +203,7 @@ div > label[for="psw"]::before {
     bottom: -52px;
     font-size: 0.8rem;
     font-weight: normal;
+    width: 23ch;
 }
 
 main > button {
