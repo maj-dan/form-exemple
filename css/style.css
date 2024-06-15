@@ -8,14 +8,6 @@
 }
 
 @font-face {
-    font-family: pacifico;
-    src: url(../fonts/pacifico-webfont.woff2),
-         url(../fonts/pacifico-webfont.woff);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: quicksand;
     src: url(../fonts/quicksand-regular-webfont.woff2),
          url(../fonts/quicksand-regular-webfont.woff);
@@ -48,6 +40,7 @@
     --green: #596D48;
     --blue: #226bf5;
     --red: #f03838;
+    --h-letter-spacing: -0.1rem;
     --left-padding: 64px;
     --right-padding: max(64px, 15%);
 }
@@ -59,6 +52,8 @@
 }
 
 body {
+    /*Fix reference bugs envolving relative units, making
+    the size of aside and main more easy to control*/
     height: max(847px, 100vh);
     display: flex;
     font-family: quicksand, sans-serif;
@@ -113,6 +108,7 @@ aside > div > img {
     height: 100%;
 }
 
+/*Form section*/
 main {
     flex: 2;
     min-width: 426px;
@@ -131,10 +127,17 @@ main > * {
 main > * + * {
     margin-top: 40px;
 }
+
+main > h2 {
+    font-size: 1.8rem;
+    letter-spacing: var(--h-letter-spacing);
+}
+
 main > div {
     margin-top: 54px;
     background-color: var(--white);
     align-self: stretch;
+    box-shadow: 4px 4px 6px var(--shadow);
 }
 
 form {
@@ -163,7 +166,7 @@ div > h2 {
     margin-top: 28px;
     font-size: 1.8rem;
     font-weight: bold;
-    letter-spacing: -0.1rem;
+    letter-spacing: var(--h-letter-spacing);
 }
 
 div > label {
