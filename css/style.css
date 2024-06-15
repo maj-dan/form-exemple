@@ -47,6 +47,7 @@
     --light: #E5E7EB;
     --green: #596D48;
     --blue: #226bf5;
+    --red: #f03838;
     --left-padding: 64px;
     --right-padding: max(64px, 15%);
 }
@@ -166,6 +167,7 @@ div > label {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
+    position: relative;
 }
 
 div > input {
@@ -187,6 +189,20 @@ div > input:focus,
 div > input:focus-visible {
     border: 1px solid var(--blue);
     outline: none;
+}
+
+div > input:invalid {
+    border: 1px solid var(--red);
+}
+
+div > label[for="psw"]::before {
+    position: absolute;
+    text-transform: none;
+    content: "* Password do not match";
+    color: var(--red);
+    bottom: -52px;
+    font-size: 0.8rem;
+    font-weight: normal;
 }
 
 main > button {

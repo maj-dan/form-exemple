@@ -34,19 +34,45 @@
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input
+                     type="email" 
+                     name="email" 
+                     id="email"
+                     placeholder="example@example"
+                     >
                 </div>
                 <div>
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone">
+                    <input 
+                    type="tel" 
+                    name="phone" 
+                    id="phone"
+                    pattern="[\d]{11}"
+                    max="11"
+                    placeholder="33999998888"
+                    >
                 </div>
                 <div>
                     <label for="psw">Password</label>
-                    <input type="password" name="psw" id="psw">
+                    <input
+                     type="password"
+                      name="psw"
+                      id="psw"
+                      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                      placeholder="Min of 8 letters and numbers"
+                      required
+                      >
                 </div>
                 <div>
                     <label for="psw-confirm">Confirm Password</label>
-                    <input type="password" name="psw-confirm" id="psw-confirm">
+                    <input 
+                    type="password" 
+                    name="psw-confirm" 
+                    id="psw-confirm"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    placeholder="Repeat the password"
+                    required
+                    >
                 </div>
             </form>
         </div>
