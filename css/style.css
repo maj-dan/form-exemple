@@ -43,7 +43,10 @@
     font-size: 16px;
     --white: #FFF;
     --gray: #EEE;
+    --shadow: #CCC;
     --light: #E5E7EB;
+    --green: #596D48;
+    --blue: #226bf5;
     --left-padding: 64px;
     --right-padding: max(64px, 15%);
 }
@@ -109,7 +112,7 @@ aside > div > img {
 
 main {
     flex: 2;
-    min-width: 444px;
+    min-width: 426px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,3 +178,36 @@ div > input {
     padding: 0.3rem 0.6rem;
 }
 
+div > input:hover,
+div > input:focus {
+    box-shadow: 3px 3px 4px var(--shadow);
+}
+
+div > input:focus,
+div > input:focus-visible {
+    border: 1px solid var(--blue);
+    outline: none;
+}
+
+main > button {
+    background-color: var(--green);
+    color: var(--white);
+    font-family: quicksand, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem 3rem;
+    border: 2px solid var(--green);
+    border-radius: 0.5rem;
+    margin-left: var(--left-padding);
+}
+
+main > button:hover {
+    background-color: var(--white);
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+main > button:active {
+    background-color: var(--shadow);
+    color: var(--green);
+}
