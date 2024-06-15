@@ -211,3 +211,16 @@ main > button:active {
     background-color: var(--shadow);
     color: var(--green);
 }
+
+main > p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+main > p > a {
+    color: var(--green);
+    text-decoration: none;
+}
+main > p > a:hover {
+    text-decoration: underline;
+}
